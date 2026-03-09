@@ -30,7 +30,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath("com.github.GregTechCE:ForgeGradle:FG_2.3-SNAPSHOT")
+        classpath("net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT")
         classpath("org.eclipse.jgit:org.eclipse.jgit:5.8.0.202006091008-r")
         classpath("org.apache.commons:commons-lang3:3.12.0")
     }
@@ -85,6 +85,10 @@ minecraft {
 }
 
 repositories {
+    maven {
+        name = "ModMaven"
+        setUrl("https://modmaven.dev/")
+    }
     maven {
         name = "ic2, forestry"
         setUrl("http://maven.ic2.player.to/")
