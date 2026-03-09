@@ -320,9 +320,9 @@ if (curseforgeProject != null) {
     notificationTask.dependsOn("curseforge")
 }
 
-tasks["build"].dependsOn("generateChangelog")
-tasks["ciWriteBuildNumber"].dependsOn("generateChangelog")
-notificationTask.dependsOn("generateChangelog")
+//tasks["build"].dependsOn("generateChangelog")
+//tasks["ciWriteBuildNumber"].dependsOn("generateChangelog")
+//notificationTask.dependsOn("generateChangelog")
 
 fun getPrettyCommitDescription(commit: RevCommit): String {
     val closePattern = Regex("(Closes|Fixes) #[0-9]*\\.?")
